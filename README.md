@@ -7,13 +7,13 @@
 # Catalogue
 - [IDM Mizone Content Analysis](#idm-mizone-content-analysis)
 - [Catalogue](#catalogue)
-  - [Summary](#summary)
-  - [Contents to be analyzed](#contents-to-be-analyzed)
-  - [How to analyzed](#how-to-analyzed)
-    - [Prepare](#prepare)
-    - [For each video](#for-each-video)
-    - [After all video](#after-all-video)
-  - [LICENSE](#license)
+	- [Summary](#summary)
+	- [Contents to be analyzed](#contents-to-be-analyzed)
+	- [How to analyzed](#how-to-analyzed)
+		- [Prepare](#prepare)
+		- [For each video](#for-each-video)
+		- [After all video](#after-all-video)
+	- [LICENSE](#license)
 
 
 
@@ -51,16 +51,16 @@ const (
 	UserContentTypeStory
 )
 
-type RepeatThingsType struct {
-	EnumID  int
-	Payload any
-}
-
 const (
 	RepeatThingsTypeThemes = iota // 主题
 	RepeatThingsTypeStyle         // 风格
 	RepeatThingsTypeFormat        // 格式
 )
+
+type RepeatThingsType struct {
+	EnumID  int
+	Payload any
+}
 
 type UserFeedbackToneLevel int
 
@@ -71,7 +71,6 @@ const (
 	UserFeedbackToneUnhappy
 	UserFeedbackToneVeryUnhappy
 )
-
 ```
 
 ```go
