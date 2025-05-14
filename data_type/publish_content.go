@@ -24,7 +24,8 @@ type ContentInfo struct {
 }
 
 const (
-	ContentGeneralFeedbackTrendsTypeTraditional = iota // 传统的 (广告)
+	ContentGeneralFeedbackTrendsTypeTraditional         = iota // 传统的 (广告)
+	ContentGeneralFeedbackTrendsTypeSuperStarSuggestion        // 明星推荐
 )
 
 // 内容发布后的一些基本数据
@@ -41,9 +42,6 @@ type ContentGeneralFeedback struct {
 	CommentCounts   int
 	Stars           int
 	StatisticalTime string
-
-	PublishContentType int
-	PublishDetail      []string
 }
 
 // 对发布内容的逆向，

@@ -26,7 +26,7 @@ var CommentAPublisherTable = data_type.ContentInfo{
 	PublishDetail: []string{
 		"Latest one",
 		// TODO: Finish WIP
-		"Invite @宋雨琦_G-I-DLE in it (Super star; User Data? <WIP>; https://www.xiaohongshu.com/user/profile/5cc10d72000000001200f6b8?xsec_token=AB4OX8EnHPU2TJtUm9GoersfLZ3XQhqnVkPU1hIdhv7DA%3D&xsec_source=pc_note)",
+		"Invite @宋雨琦_G-I-DLE in it (Super star; User Data? <WIP>; https://www.xiaohongshu.com/user/profile/5cc10d72000000001200f6b8)",
 	},
 	Slogan: []string{
 		"维C拉满，大口畅饮", "这一刻不容错过，脉动回来", "快来评论区晒出【生活中被脉动回来的时刻】",
@@ -54,11 +54,13 @@ var ContentAVideoTable = data_type.ContentGeneralFeedback{
 
 // - Hit 3 -
 var ContentAHit3 = data_type.ContentInv{
+	Filters:         []string{"开头有一个以脉动瓶子的窗户开场的滤镜特效?"},
 	UserContentType: data_type.UserContentTypeReels,
 	Captions: []string{
 		"脉动风格的字幕 (官方制作)", "大、清晰、容易认出这是脉动字幕",
 	},
 	VisualAesthetics: []string{
+		"拍摄是代言人在舞台上进行的，并且舞台以蓝色基调，给人以脉动的直接联想",
 		"00:06: 脉动救我 (于是一个脉动瓶子从天而降，然后用户得到了脉动，有水花特效)",
 		"00:09: 大口畅饮 (大型水花特效及声音)",
 		"00:11~00:12: 脉动回来 (人跳起来，伴随着水花出现，以及屏幕两边的烟花特效)",
