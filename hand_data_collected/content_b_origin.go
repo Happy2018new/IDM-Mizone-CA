@@ -14,7 +14,7 @@ import "IDM-Mizone-CA/data_type"
 // Step 0.
 //
 // - Publisher table -
-var CommentBPublisherTable = data_type.ContentInfo{
+var ContentBPublisherTable = data_type.ContentInfo{
 	Publisher: data_type.Publisher{
 		Name:   "Mizone Chinese",
 		Detail: "Official Account",
@@ -51,7 +51,7 @@ var ContentBVideoTable = data_type.ContentGeneralFeedback{
 	},
 	TrendsType:       data_type.ContentGeneralFeedbackTrendsTypeSuperStarSuggestion,
 	TrendsDetail:     "通过演示代言人打篮球，然后通过喝脉动“找回状态”、“一口满电455” 来推销脉动“电解质”产品，同时开展“脉动+电解质篮球赛”吸引大学生群体购买",
-	SpecificAccounts: []data_type.Publisher{CommentBPublisherTable.Publisher},
+	SpecificAccounts: []data_type.Publisher{ContentBPublisherTable.Publisher},
 	KnownViews:       false,
 	Views:            0,
 	Likes:            6725,
@@ -650,4 +650,29 @@ var ContentBKeyWords = []string{
 // Setp 4.
 //
 // - Compute data and get simple result -
-// TODO: WIP
+var ContentBSimpleResult = data_type.InitSimpleCountFromSlice(
+	data_type.SimpleResult{
+		// AudiencePreferences: []string{
+		// 	"从小学生到大学生都出现在样本中，说明年龄适应性广泛",
+		// 	"用户中存在一些游戏玩家，但多为蛋仔派对玩家",
+		// 	"用户群体几乎都是女性，只有少量是男性",
+		// }, 
+		// Treads: "用户多趋向于代言人(宋雨琦)的粉丝而观看脉动的广告", 
+		// UserAction: []string{
+		// 	"在代言人的影响下，部分用户间接或直接的表达了自己也希望打篮球",
+		// 	"大部分用户夸赞代言人(宋雨琦)很美，并且是因为她而来观看视频",
+		// 	"部分用户对代言人(宋雨琦)代理脉动进行宣传感到惊叹",
+		// },
+		// UserInterested: []string{
+		// 	"用户大多表达对代言人(宋雨琦)的喜爱，少量用户直接表达自己对脉动的喜爱，并且样本中几乎很多人都是因为代言人而观看视频",
+		// },
+		// RelationBetweenHashtagAndEngagement: []string{
+		// 	"“#宋雨琦脉动品牌代言人” 跟样本中用户的实际参与基本吻合，样本中大部分参与的用户都是因为该明星而观看视频",
+		// 	"“#这一刻不容错过脉动回来” 跟评论区中用户的交谈内容基本没有吻合，但该标签体现了脉动品牌及要宣传的产品，从影响度来看，是成功的",
+		// 	"“#让宋雨琦活力返场的状态救星” 也是跟样本中用户的讨论契合，并且部分用户的评论直接出现了“我们有救了”的字样",
+		// }, // ignore
+		ER: float32(ContentBVideoTable.CommentCounts) / float32(ContentBVideoTable.Likes),
+	},
+	ContentBCommentTable,
+)
+

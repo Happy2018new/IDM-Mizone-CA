@@ -95,7 +95,7 @@ const (
 
 
 ### After all video
-1. Get suggestion from AI
+1. States all date
 2. Combine to completely result
 
 

@@ -19,5 +19,5 @@ type Comment struct {
 	ReplyCount            int
 
 	UserBackgroud string // 通过观察其笔记简要得出的
-	AIComment     string // **最后** 把数据丢给 Deep seek 后其给出的分析 (较慢，让我们坐与放松，然后睡眠)
+	// AIComment     string // **最后** 把数据丢给 Deep seek 后其给出的分析 (较慢，让我们坐与放松，然后睡眠) // ignore
 }

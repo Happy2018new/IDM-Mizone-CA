@@ -33,16 +33,16 @@ type SimpleResult struct {
 	VeryUnhappyPeopleCount int // 感到非常不愉快的人类; 此字段自动计算
 }
 
-// 更复杂的工作还是让 AI 完成吧，这些数据让 AI 做；
-// 当然，这个部分的生成还是需要把 SimpleResult 丢给 AI
-type FurtherResult struct {
-	// Hit 4
-	Reach       int    // 看到内容的不同用户数量
-	ReachDetail string // AI 关于 Reach 的阐述
+// // 更复杂的工作还是让 AI 完成吧，这些数据让 AI 做；
+// // 当然，这个部分的生成还是需要把 SimpleResult 丢给 AI
+// type FurtherResult struct {
+// 	// Hit 4
+// 	Reach       int    // 看到内容的不同用户数量
+// 	ReachDetail string // AI 关于 Reach 的阐述
 
-	// Custom
-	Suggestions string // AI 给出更多分析建议
-}
+// 	// Custom
+// 	Suggestions string // AI 给出更多分析建议
+// } // ignore
 
 // 把 SimpleResult 和 FurtherResult 合起来，通过“人工”智能变成我们最终的分析报告
 type FinalResult string
@@ -83,7 +83,7 @@ func InitSimpleCountFromSlice(origin SimpleResult, s []Comment) SimpleResult {
 		{ID: UserFeedbackToneVeryUnhappy, Payload: float32(result.VeryUnhappyPeopleCount) / float32(result.SimpleCount)},
 	}
 	slices.SortStableFunc(temp, func(a tempStruct, b tempStruct) int {
-		return cmp.Compare(a.Payload, b.Payload)
+		return cmp.Compare(b.Payload, a.Payload)
 	})
 
 	for _, value := range temp {

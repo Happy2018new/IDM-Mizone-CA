@@ -1,0 +1,181 @@
+{
+    "series": [
+        {
+            "type": "wordCloud",
+            "shape": "circle",
+            "keepAspect": false,
+            "maskImage": null,
+            "left": "center",
+            "top": "center",
+            "width": "70%",
+            "height": "80%",
+            "right": null,
+            "bottom": null,
+            "sizeRange": [
+                30,
+                100
+            ],
+            "rotationRange": [
+                -90,
+                90
+            ],
+            "rotationStep": 45,
+            "gridSize": 8,
+            "drawOutOfBound": false,
+            "shrinkToFit": false,
+            "layoutAnimation": true,
+            "textStyle": {
+                "fontFamily": "'Times New Roman', serif"
+            },
+            "data": [
+                {
+                    "name": "Yuqi Song",
+                    "value": 50,
+                    "textStyle": {
+                        "color": "#6ce5e8"
+                    }
+                },
+                {
+                    "name": "Yuqi",
+                    "value": 173.8095238095238,
+                    "textStyle": {
+                        "color": "#6ce5e8"
+                    }
+                },
+                {
+                    "name": "buy",
+                    "value": 161.18421052631578,
+                    "textStyle": {
+                        "color": "#41b8d5"
+                    }
+                },
+                {
+                    "name": "Green grass",
+                    "value": 37.5,
+                    "textStyle": {
+                        "color": "#2d8bba"
+                    }
+                },
+                {
+                    "name": "Delicious",
+                    "value": 75,
+                    "textStyle": {
+                        "color": "#2d8bba"
+                    }
+                },
+                {
+                    "name": "Burst into tears",
+                    "value": 31.25,
+                    "textStyle": {
+                        "color": "#506e9a"
+                    }
+                },
+                {
+                    "name": "Cried",
+                    "value": 31.25,
+                    "textStyle": {
+                        "color": "#506e9a"
+                    }
+                },
+                {
+                    "name": "Wow",
+                    "value": 31.25,
+                    "textStyle": {
+                        "color": "#506e9a"
+                    }
+                },
+                {
+                    "name": "Support",
+                    "value": 31.25,
+                    "textStyle": {
+                        "color": "#506e9a"
+                    }
+                },
+                {
+                    "name": "Play basketball",
+                    "value": 83.33333333333333,
+                    "textStyle": {
+                        "color": "#635a92"
+                    }
+                },
+                {
+                    "name": "Basketball",
+                    "value": 111.1111111111111,
+                    "textStyle": {
+                        "color": "#635a92"
+                    }
+                },
+                {
+                    "name": "Linkage",
+                    "value": 27.777777777777775,
+                    "textStyle": {
+                        "color": "#635a92"
+                    }
+                },
+                {
+                    "name": "Bring me a bottle of Mizone.",
+                    "value": 46.875,
+                    "textStyle": {
+                        "color": "#7e468a"
+                    }
+                },
+                {
+                    "name": "It's impossible not to throw it in",
+                    "value": 46.875,
+                    "textStyle": {
+                        "color": "#7e468a"
+                    }
+                },
+                {
+                    "name": "Pulse together",
+                    "value": 46.875,
+                    "textStyle": {
+                        "color": "#7e468a"
+                    }
+                },
+                {
+                    "name": "One after another",
+                    "value": 46.875,
+                    "textStyle": {
+                        "color": "#7e468a"
+                    }
+                },
+                {
+                    "name": "Pulse save me",
+                    "value": 41.666666666666664,
+                    "textStyle": {
+                        "color": "#942270"
+                    }
+                },
+                {
+                    "name": "I'm beyond saving",
+                    "value": 41.666666666666664,
+                    "textStyle": {
+                        "color": "#942270"
+                    }
+                },
+                {
+                    "name": "We are saved",
+                    "value": 41.666666666666664,
+                    "textStyle": {
+                        "color": "#942270"
+                    }
+                },
+                {
+                    "name": "Where to buy",
+                    "value": 31.25,
+                    "textStyle": {
+                        "color": "#c12862"
+                    }
+                },
+                {
+                    "name": "Give a link",
+                    "value": 31.25,
+                    "textStyle": {
+                        "color": "#c12862"
+                    }
+                }
+            ]
+        }
+    ]
+}
